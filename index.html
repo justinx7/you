@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe3ef">
+  <meta name="description" content="Una pequeña sorpresa hecha con mucho amor.">
+
+  <title>Para mi princesa ♡</title>
+
+  <!-- TIPOGRAFÍAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+
+  <div class="sparkle-layer" id="sparkleLayer"></div>
+  <div class="floating-layer" id="floatingLayer"></div>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="topbar">
+
+    <a class="brand" href="#inicio">
+      <span class="brand-bow">🎀</span>
+      para mi amor
+    </a>
+
+    <button class="music-button" id="musicToggle" type="button">
+      <span id="musicIcon">♫</span>
+      <span id="musicLabel">Activar música</span>
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- =================================
+         1. BIENVENIDA
+    ================================== -->
+
+    <section class="welcome section-screen" id="inicio">
+
+      <div class="welcome-card">
+
+        <div class="mini-label">
+          <span>✦</span>
+          una sorpresa hecha para ti
+          <span>✦</span>
+        </div>
+
+        <!-- GATITA KAWAII -->
+        <div class="kitty-art hero-kitty" role="img"
+             aria-label="Gatita blanca con moño rosa">
+
+          <span class="kitty-bow">
+            <i></i>
+            <i></i>
+            <b></b>
+          </span>
+
+          <span class="kitty-ear ear-left"></span>
+          <span class="kitty-ear ear-right"></span>
+
+          <span class="kitty-face">
+
+            <i class="eye eye-left"></i>
+            <i class="eye eye-right"></i>
+            <i class="nose"></i>
+
+            <i class="whisker w1"></i>
+            <i class="whisker w2"></i>
+            <i class="whisker w3"></i>
+            <i class="whisker w4"></i>
+
+            <i class="blush blush-left"></i>
+            <i class="blush blush-right"></i>
+
+          </span>
+
+        </div>
+
+        <p class="eyebrow">con todo mi corazón</p>
+
+        <h1>
+          Tengo algo especial
+          <br>
+          <em>para ti, mi amor</em>
+        </h1>
+
+        <p class="welcome-copy">
+          Preparé este pequeño rinconcito para recordarte
+          lo increíble y especial que eres para mí.
+        </p>
+
+        <button class="primary-button" id="openSurprise">
+          Abrir mi sorpresa
+          <span>♡</span>
+        </button>
+
+        <div class="welcome-footer">
+          hecho con amor, solo para ti
+          <span>♥</span>
+        </div>
+
+      </div>
+
+      <span class="decor decor-star star-a">✦</span>
+      <span class="decor decor-heart heart-a">♥</span>
+      <span class="decor decor-flower flower-a">✿</span>
+      <span class="decor decor-star star-b">✧</span>
+
+    </section>
+
+
+    <!-- =================================
+         2. MENSAJE ROMÁNTICO
+    ================================== -->
+
+    <section class="message-section content-section" id="mensaje">
+
+      <div class="section-heading reveal">
+
+        <span class="section-kicker">
+          un mensajito para ti
+        </span>
+
+        <h2>
+          Para la niña más especial
+          <em>de mi vida</em>
+        </h2>
+
+        <p>
+          Hay cosas que merecen decirse una y otra vez...
+        </p>
+
+      </div>
+
+
+      <article class="letter-card reveal">
+
+        <div class="letter-top">
+          <span>♡</span>
+          <span>con cariño infinito</span>
+          <span>♡</span>
+        </div>
+
+        <p class="typed-message" id="typedMessage"></p>
+
+        <span class="letter-signature">
+          Con amor, tu persona favorita ♡
+        </span>
+
+        <span class="letter-stamp">💗</span>
+
+      </article>
+
+
+      <div class="photo-note reveal">
+
+        <div class="photo-frame">
+
+          <div class="photo-placeholder">
+            <span>♡</span>
+            <small>
+              Un recuerdo bonito
+              <br>
+              de nosotros
+            </small>
+          </div>
+
+          <!--
+          PARA AGREGAR UNA FOTO:
+
+          Reemplaza el bloque photo-placeholder por:
+
+          <img src="fotos/ustedes.jpg" alt="Nosotros">
+          -->
+
+        </div>
+
+        <p>
+          Mi lugar favorito siempre será donde estés tú.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         3. CONTADOR DE TIEMPO
+    ================================== -->
+
+    <section class="counter-section content-section" id="tiempo">
+
+      <div class="counter-card reveal">
+
+        <span class="section-kicker">
+          cada segundo contigo cuenta
+        </span>
+
+        <h2>
+          Desde que comenzó
+          <em>nuestra historia</em>
+        </h2>
+
+        <p class="counter-intro">
+          Y todavía me emociona pensar en todos
+          los momentos que nos esperan.
+        </p>
+
+        <div class="counter-grid" id="loveCounter">
+
+          <div>
+            <strong id="days">0</strong>
+            <span>días</span>
+          </div>
+
+          <div>
+            <strong id="hours">00</strong>
+            <span>horas</span>
+          </div>
+
+          <div>
+            <strong id="minutes">00</strong>
+            <span>minutos</span>
+          </div>
+
+          <div>
+            <strong id="seconds">00</strong>
+            <span>segundos</span>
+          </div>
+
+        </div>
+
+        <div class="counter-date">
+          Una historia que quiero seguir escribiendo contigo
+          <span>♥</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         4. RAZONES POR LAS QUE LA AMO
+    ================================== -->
+
+    <section class="reasons-section content-section" id="razones">
+
+      <div class="section-heading reveal">
+
+        <span class="section-kicker">
+          podría escribir mil más
+        </span>
+
+        <h2>
+          Pequeñas razones
+          <em>por las que te amo</em>
+        </h2>
+
+        <p>
+          Toca cada tarjetita; guardé algo bonito dentro de ellas.
+        </p>
+
+      </div>
+
+
+      <div class="reasons-grid">
+
+        <button class="reason-card reveal"
+                data-message="Porque tu sonrisa tiene esa magia que puede mejorar hasta mi día más difícil.">
+
+          <span class="reason-icon">🎀</span>
+          <strong>Tu sonrisa</strong>
+          <span class="reason-hint">Toca para descubrir ♡</span>
+          <span class="reason-heart">♥</span>
+
+        </button>
+
+
+        <button class="reason-card reveal"
+                data-message="Porque contigo puedo ser yo mismo, sentirme en paz y saber que estoy en un lugar bonito.">
+
+          <span class="reason-icon">☁️</span>
+          <strong>Tu forma de ser</strong>
+          <span class="reason-hint">Toca para descubrir ♡</span>
+          <span class="reason-heart">♥</span>
+
+        </button>
+
+
+        <button class="reason-card reveal"
+                data-message="Porque hasta los momentos más sencillos se vuelven especiales cuando los comparto contigo.">
+
+          <span class="reason-icon">🌷</span>
+          <strong>Nuestros momentos</strong>
+          <span class="reason-hint">Toca para descubrir ♡</span>
+          <span class="reason-heart">♥</span>
+
+        </button>
+
+
+        <button class="reason-card reveal"
+                data-message="Porque admiro tu corazón, tus detalles y esa manera tan tuya de hacerme feliz.">
+
+          <span class="reason-icon">💌</span>
+          <strong>Tu corazón</strong>
+          <span class="reason-hint">Toca para descubrir ♡</span>
+          <span class="reason-heart">♥</span>
+
+        </button>
+
+      </div>
+
+      <p class="reason-footnote reveal">
+        Y la razón más grande: eres tú, exactamente tú. ♡
+      </p>
+
+    </section>
+
+
+    <!-- =================================
+         5. SORPRESA FINAL
+    ================================== -->
+
+    <section class="final-section content-section" id="final">
+
+      <div class="final-card reveal">
+
+        <div class="final-kitty kitty-art">
+
+          <span class="kitty-bow">
+            <i></i>
+            <i></i>
+            <b></b>
+          </span>
+
+          <span class="kitty-ear ear-left"></span>
+          <span class="kitty-ear ear-right"></span>
+
+          <span class="kitty-face">
+
+            <i class="eye eye-left"></i>
+            <i class="eye eye-right"></i>
+            <i class="nose"></i>
+
+            <i class="whisker w1"></i>
+            <i class="whisker w2"></i>
+            <i class="whisker w3"></i>
+            <i class="whisker w4"></i>
+
+            <i class="blush blush-left"></i>
+            <i class="blush blush-right"></i>
+
+          </span>
+
+          <span class="kitty-hug-heart">♥</span>
+
+        </div>
+
+
+        <span class="section-kicker">
+          y por si no te lo digo suficiente...
+        </span>
+
+        <h2>
+          Te amo muchísimo,
+          <br>
+          <em>mi princesa</em>
+        </h2>
+
+        <p>
+          Gracias por existir, por coincidir conmigo
+          y por hacer tan bonita mi vida.
+        </p>
+
+        <button class="primary-button" id="moreHearts">
+          Un último abrazo de corazones
+          <span>♡</span>
+        </button>
+
+        <div class="final-signature">
+          Siempre tú. Siempre nosotros. ♡
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    Diseñado con mucho amor <span>♥</span>
+  </footer>
+
+
+  <!-- VENTANA DE MENSAJES SECRETOS -->
+
+  <dialog class="reason-dialog" id="reasonDialog">
+
+    <button class="dialog-close" id="closeDialog">
+      ×
+    </button>
+
+    <span class="dialog-bow">🎀</span>
+
+    <p id="dialogMessage"></p>
+
+    <span class="dialog-heart">♡</span>
+
+  </dialog>
+
+
+  <!-- MÚSICA: coloca musica.mp3 junto a los otros archivos -->
+
+  <audio id="backgroundMusic"
+         src="musica.mp3"
+         loop
+         preload="none">
+  </audio>
+
+</body>
+</html>
