@@ -12,7 +12,7 @@
 const CONFIG = {
 
   // Nombre de tu novia
-  nombreDeElla: "yurii"""
+  nombreDeElla: """yurii""",
 
   // Tu nombre
   nombreDeEl: "yo",
